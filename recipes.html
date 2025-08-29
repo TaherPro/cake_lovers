@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- header section -->
+    <!-- header -->
     <header>
       <div class="navbar">
         <a href="index.html">
-          <img
-            src="https://i.pinimg.com/474x/a2/a1/8e/a2a18e5b9f1fc6bf8808a8f1ca9f7a8e.jpg" width="100" height="80" alt="cake" class="logo"/>
+          <img src="https://i.pinimg.com/474x/a2/a1/8e/a2a18e5b9f1fc6bf8808a8f1ca9f7a8e.jpg" width="100" height="80" alt="cake" class="logo"/>
         </a>
         <nav class="nav">
+          <a href="index.html">Home</a>  
           <a href="recipes.html">Recipes</a>
-          <a href="classes.html">Classes</a>
           <a href="about.html">About</a>
         </nav>
       </div>
@@ -28,44 +27,55 @@
         <label for="filter">Filter by category:</label>
         <select id="filter">
           <option>Cupcakes</option>
-          <option>Small Cakes</option>
-          <option>Birthday Cakes</option>
+          <option>Sheet Cakes</option>
+          <option>Layer Cakes</option>
           <option>Weeding Cakes</option>
+          <option>Birthday Cakes</option>
         </select>
 
-        <div class="recipe-grid">
-          <div class="recipe-card">
-            <img src="images/imgq1.jpeg" alt="Cake" />
-            <p>Chocolate Cake</p>
-          </div>
-          <div class="recipe-card">
-            <img src="images/imge1.jpg" alt="Cake" />
-            <p>Strawberry Cake</p>
-          </div>
+        <div class="card">
+            <div class="card-text">
+                <h2>Red Velvet Cake</h2>
+                <p>Cream butter and sugar, then beat in eggs, red food coloring, and vanilla. Sift together flour, cocoa powder, baking soda, and salt, then alternately add this mixture and buttermilk to the butter mixture. Pour the batter into prepared pans and bake at 350°F (175°C) until a toothpick comes out clean, and let cool. </p>
+            </div>
+            <img src="images/p7.jpg" alt="">
         </div>
-      </section>
 
-       <section class="extra">
-          <h2>CAKeeeeeeeeeeeeeeees</h2>
-          <img src="images/200.webp" height="100%" alt="Baking GIF">
+        <div class="card">
+            <div class="card-text">
+                <h2>Cup Cakes</h2>
+                <p>Mix wet ingredients like butter, eggs, and milk with your dry ingredients of flour, sugar, and baking powder until just combined. Pour the batter into the prepared pan and bake for 30–35 minutes, or until a toothpick comes out clean.e</p>
+            </div>
+            <img src="images/p1.jpg" alt="">
+        </div>
+
+        <div class="card">
+            <div class="card-text">
+               <h2>Sheet Cakes</h2>
+                <p>To make a basic sheet cake, preheat your oven to 350°F and grease a 9x13 pan. Mix wet ingredients like butter, eggs, and milk with your dry ingredients of flour, sugar, and baking powder until just combined. Pour the batter into the prepared pan and bake for 30–35 minutes, or until a toothpick comes out clean.</p>
+            </div>
+            <img src="images/imgq1.jpeg" alt="">
+        </div>
+
+        <section class="rating">
+            <h2 style="text-align: center;">Rate Our Recipes</h2>
+            <form>
+            <input type="recipe" placeholder="Recipe Name" required />
+            <select>
+                <option>*****</option>
+                <option>****</option>
+                <option>***</option>
+                <option>**</option>
+                <option>*</option>
+            </select>
+            <textarea placeholder="Your comment"></textarea>
+            <button type="submit">Submit Rating</button>
+            </form>
         </section>
-
-      <section class="rating">
-        <h2>Rate This Recipe</h2>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <select>
-            <option>⭐⭐⭐⭐⭐</option>
-            <option>⭐⭐⭐⭐</option>
-            <option>⭐⭐⭐</option>
-            <option>⭐⭐</option>
-            <option>⭐</option>
-          </select>
-          <textarea placeholder="Your comment"></textarea>
-          <button type="submit">Submit Rating</button>
-        </form>
-      </section>
     </main>
   </body>
+  <!-- footer -->
+  <footer class="footer">
+    <p>2025 Cake Lovers</p>
+  </footer>
 </html>
